@@ -5,26 +5,26 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { LoginComponent } from './login/login.component';
-import { SearchComponent } from './search/second-nav-bar.component';
-import { ProfileComponent } from './profile/profile.component';
-import { NavSearchComponent } from './nav-search/nav-search.component';
+import { SecondNavBarComponent } from './second-nav-bar/second-nav-bar.component';
+import { MainLoginComponent } from './main-login/main-login.component';
 import { NewUserComponent } from './new-user/new-user.component';
-import { InsideComponent } from './inside/inside.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { ProfilComponent } from './profil/profil.component';
 import { SearchMusicComponent } from './search-music/search-music.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    LoginComponent,
-    SearchComponent,
-    ProfileComponent,
-    NavSearchComponent,
+    SecondNavBarComponent,
+    MainLoginComponent,
     NewUserComponent,
-    InsideComponent,
-    SearchMusicComponent
+    MainPageComponent,
+    ProfilComponent,
+    SearchMusicComponent,
+
   ],
   imports: [
     BrowserModule,
