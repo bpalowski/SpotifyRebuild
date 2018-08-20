@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { CreateNew } from './models/createnew.model';
-import { Login } from './models/login.model';
-import { Show } from './models/search.model';
+
 
 
 @Component({
@@ -13,5 +11,7 @@ import { Show } from './models/search.model';
 export class AppComponent {
   title = 'Spotify';
 
+  // SignUp: string;
+  // Login: string;
 
 }

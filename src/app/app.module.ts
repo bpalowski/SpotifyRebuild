@@ -11,6 +11,9 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ProfilComponent } from './profil/profil.component';
 import { SearchMusicComponent } from './search-music/search-music.component';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -24,6 +27,9 @@ import { SearchMusicComponent } from './search-music/search-music.component';
     MainPageComponent,
     ProfilComponent,
     SearchMusicComponent,
+    LoginComponent,
+    SignUpComponent,
+    FooterComponent,
 
   ],
   imports: [

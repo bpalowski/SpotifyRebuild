@@ -1,7 +1,7 @@
 import { Component,Input,Output,EventEmitter } from '@angular/core';
-import { CreateNew } from '../models/createnew.model';
+// import { CreateNew } from '../models/createnew.model';
 import { Login } from '../models/login.model';
-import { Show } from '../models/search.model';
+// import { Show } from '../models/search.model';
 
 
 @Component({
@@ -10,6 +10,9 @@ import { Show } from '../models/search.model';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent{
-//  test = 'test';
 
+  // SignUp : string;
+   Login: string ="Login";
+//  test = 'test';
+constructor() { }
 }

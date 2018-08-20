@@ -1,0 +1,21 @@
+body{
+padding: 50px;
+height: 900px;
+
+background-image:linear-gradient(to left top, #6682ac, #5d5c7b, #473b4d, #292026, #000000) ;
+text-align: center;
+color: white;
+}
+
+input{
+  background-color: grey;
+}
+button{
+  border-radius: 50px;
+  background-color: black;
+}
+#picture{
+  max-width: 450px;
+  length: 50px;
+  float: right;
+}
