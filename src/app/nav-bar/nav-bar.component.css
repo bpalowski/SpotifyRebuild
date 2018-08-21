@@ -1,5 +1,13 @@
+ nav{
+      filter: alpha(opacity=10px);
+        background-color: black;
+}
+/* header{
+  background-color: transparent;
 
-
-/* img{
-  background-color: white;
 } */
+#image2{
+  background-color: #495057;
+  border: black;
+  width: 180px;
+}
