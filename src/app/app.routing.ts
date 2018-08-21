@@ -29,7 +29,7 @@ const appRoutes: Routes = [
 {
  path: 'Search',
  component: SearchMusicComponent
-}
+},
 {
  path: 'Profil',
  component: ProfilComponent
