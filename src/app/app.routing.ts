@@ -8,7 +8,7 @@ import { ProfilComponent } from './profil/profil.component';
 // import { SearchMusicComponent } from './search-music/search-music.component';
 import { ResultComponent } from './result/result.component';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
-
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -42,6 +42,10 @@ const appRoutes: Routes = [
 {
  path: 'List',
  component: ListProfilesComponent
+},
+{
+ path: 'Admin',
+ component: AdminComponent
 }
  ];
 
