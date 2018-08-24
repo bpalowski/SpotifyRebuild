@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Spotify';
 
+constructor(private httpClient:HttpClient) { }
   // SignUp: string;
   // Login: string;
 

@@ -5,14 +5,13 @@ import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProfilComponent } from './profil/profil.component';
-import { SearchMusicComponent } from './search-music/search-music.component';
-
+// import { SearchMusicComponent } from './search-music/search-music.component';
+import { ResultComponent } from './result/result.component';
 
 const appRoutes: Routes = [
   {
      path: '',
      component: MainPageComponent
-
    },
    {
     path: 'Login',
@@ -26,14 +25,19 @@ const appRoutes: Routes = [
   path: '',
   component: FooterComponent
 },
-{
- path: 'Search',
- component: SearchMusicComponent
-},
+// {
+//  path: 'Search',
+//  component: SearchMusicComponent
+// },
 {
  path: 'Profil',
  component: ProfilComponent
+},
+{
+ path: 'Result',
+ component: ResultComponent
 }
+
  ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

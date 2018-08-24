@@ -13,6 +13,7 @@ export class NavBarComponent{
 
   // SignUp : string;
    Login: string ="Login";
+    Search: string = "Search";
 //  test = 'test';
 constructor() { }
 }
