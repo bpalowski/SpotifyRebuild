@@ -1,19 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Profile } from '../models/profile.model';
 import { Router } from '@angular/router';
+import { ProfilService } from '../profil.service';
 
 @Component({
   selector: 'app-list-profiles',
   templateUrl: './list-profiles.component.html',
-  styleUrls: ['./list-profiles.component.css']
+  styleUrls: ['./list-profiles.component.css'],
+  providers: [ProfilService]
 })
-export class ListProfilesComponent  {
+export class ListProfilesComponent implements OnInit {
 
-  profiles: Profile[]= [
-    new Profile("Brian Profile","h","h",
-    "A live  album by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom.", 1),
+profiles: Profile[];
 
-     ];
+constructor(private router: Router,private profilService: ProfilService) {}
+
+ngOnInit(){
+  this.profiles = this.profilService.getProfiles();
+  }
+
      goToProfile(clickedProfile: Profile) {
        this.router.navigate(['profiles', clickedProfile.id]);
      };
