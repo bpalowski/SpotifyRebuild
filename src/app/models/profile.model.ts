@@ -1,3 +1,3 @@
 export class Profile {
-  constructor(public name: string,  public email: string, public favorites:string, public password:string, public id: number) { }
+  constructor(public name: string,  public email: string, public favorites:string, public password:string) { }
 }

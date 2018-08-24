@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Profile } from './models/profile.model';
-import { PROFILES } from './mock-profiles';
+// import { PROFILES } from './mock-profiles';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 
@@ -15,14 +15,17 @@ export class ProfilService {
   getProfiles() {
     return this.profiles;
   }
+  addProfile(newProfile: Profile) {
+    this.profiles.push(newProfile);
+  }
 
 
   getProfileById(profileId: number){
-    for(var i=0; i<=PROFILES.length-1; i++){
-      if(PROFILES[i].id === profileId){
-        return PROFILES[i];
-      }
-    }
+    // for(var i=0; i<=PROFILES.length-1; i++){
+    //   if(PROFILES[i].id === profileId){
+    //     return PROFILES[i];
+    //   }
+    // }
   }
 
 

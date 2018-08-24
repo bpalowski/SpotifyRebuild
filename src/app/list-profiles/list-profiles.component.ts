@@ -22,7 +22,7 @@ this.profiles = this.profilService.getProfiles();
   }
 
      goToProfile(clickedProfile: Profile) {
-       this.router.navigate(['profiles', clickedProfile.id]);
+       // this.router.navigate(['profiles', clickedProfile.id]);
      };
     }
 
