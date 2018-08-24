@@ -22,6 +22,7 @@ import { MusicVideoComponent } from './music-video/music-video.component';
 import { FillerComponent } from './filler/filler.component';
 import { FillerTwoComponent } from './filler-two/filler-two.component';
 import { ResultComponent } from './result/result.component';
+import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 
 
 export const firebaseConfig = {
@@ -48,6 +49,7 @@ export const firebaseConfig = {
     FillerComponent,
     FillerTwoComponent,
     ResultComponent,
+    ListProfilesComponent,
 
   ],
   imports: [

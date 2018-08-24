@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NavBarComponent} from '../nav-bar/nav-bar.component'
+// import { NavBarComponent} from '../nav-bar/nav-bar.component'
+import { Profile } from '../models/profile.model';
 
 
 @Component({
