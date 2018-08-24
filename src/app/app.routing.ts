@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ProfilComponent } from './profil/profil.component';
 // import { SearchMusicComponent } from './search-music/search-music.component';
 import { ResultComponent } from './result/result.component';
+import { ListProfilesComponent } from './list-profiles/list-profiles.component';
+
 
 const appRoutes: Routes = [
   {
@@ -30,14 +32,17 @@ const appRoutes: Routes = [
 //  component: SearchMusicComponent
 // },
 {
- path: 'Profil',
+ path: 'profiles/:id',
  component: ProfilComponent
 },
 {
  path: 'Result',
  component: ResultComponent
+},
+{
+ path: 'List',
+ component: ListProfilesComponent
 }
-
  ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
