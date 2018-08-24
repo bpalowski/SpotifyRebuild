@@ -3,6 +3,7 @@ import { Profile } from '../models/profile.model';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { ProfilService } from '../profil.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-profil',
@@ -11,15 +12,15 @@ import { ProfilService } from '../profil.service';
   providers: [ProfilService]
 })
 export class ProfilComponent implements OnInit {
-  profileId: number;
-  profileToDisplay: Profile;
+  profileId: string;
+  profileToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private profilService: ProfilService) { }
 
- newThis = this;
+ // newThis = this;
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.profileId = parseInt(urlParameters['id']);
+      this.profileId = urlParameters['id'];
         });
         this.profileToDisplay = this.profilService.getProfileById(this.profileId);
   }

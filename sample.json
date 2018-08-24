@@ -1,14 +1,8 @@
 { "profiles": [{
-    "name": " Piper At The Gates of Dawn",
-    "email": "Pink Floyd",
-    "favorites": "A live  album by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom.",
-    "password": "dsbfkjsfks",
-    "id": "1"
-    }, {
-    "title": "brian",
-    "artist": "aksd",
-    "description": "asdasasd",
-    "password": "asdasdsad",
-    "id": "1"
-      }]
+    "name": "",
+    "email": "",
+    "favorites": "",
+    "password": "",
+    "id":""
+    }]
     }

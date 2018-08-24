@@ -1,6 +1,7 @@
 
 <div class="Jumbotron">
-<h2>This is a Profile:{{profileToDisplay.name}}</h2>
-<h2>This is a Profile: {{profileToDisplay.email}}</h2>
-<h2>This is a Profile: {{profileToDisplay.password}}</h2>
+<h2>Name:{{(profileToDisplay | async)?.name}}</h2>
+<h2>Email: {{(profileToDisplay | async)?.email}}</h2>
+<h2>Favorite: {{(profileToDisplay | async)?.favorites}}</h2>
+<h2>Password: {{(profileToDisplay | async)?.password}}</h2>
 </div>

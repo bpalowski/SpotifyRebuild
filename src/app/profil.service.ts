@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Profile } from './models/profile.model';
-// import { PROFILES } from './mock-profiles';
+ // import { PROFILES } from './mock-profiles';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 
@@ -20,13 +20,12 @@ export class ProfilService {
   }
 
 
-  getProfileById(profileId: number){
+  getProfileById(profileId: string){
+    return this.database.object('profiles/' + profileId);
+  }
     // for(var i=0; i<=PROFILES.length-1; i++){
     //   if(PROFILES[i].id === profileId){
     //     return PROFILES[i];
     //   }
     // }
   }
-
-
-}
