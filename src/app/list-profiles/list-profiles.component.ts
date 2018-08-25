@@ -15,16 +15,16 @@ export class ListProfilesComponent implements OnInit {
 
   // profiles: Profile[];
 
-constructor(private router: Router,private profilService: ProfilService) {}
+  constructor(private router: Router,private profilService: ProfilService) {}
 
-ngOnInit(){
-this.profiles = this.profilService.getProfiles();
+  ngOnInit(){
+    this.profiles = this.profilService.getProfiles();
   }
 
-     goToProfile(clickedProfile: Profile) {
-       this.router.navigate(['profiles', clickedProfile.$key]);
-     };
-    }
+  goToProfile(clickedProfile: Profile) {
+    this.router.navigate(['profiles', clickedProfile.$key]);
+  };
+}
 
 
 

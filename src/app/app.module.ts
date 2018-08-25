@@ -25,6 +25,7 @@ import { FillerTwoComponent } from './filler-two/filler-two.component';
 import { ResultComponent } from './result/result.component';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 
 export const firebaseConfig = {
@@ -54,6 +55,7 @@ export const firebaseConfig = {
     ResultComponent,
     ListProfilesComponent,
     AdminComponent,
+    EditProfileComponent,
 
   ],
   imports: [
