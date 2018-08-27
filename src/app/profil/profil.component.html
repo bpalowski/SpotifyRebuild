@@ -1,14 +1,8 @@
 
 <div class="Jumbotron">
   <div>
-<h2>Name:{{(profileToDisplay | async)?.name}}</h2>
-<h2>Email: {{(profileToDisplay | async)?.email}}</h2>
-<h2>Favorite: {{(profileToDisplay | async)?.favorites}}</h2>
-<h2>Password: {{(profileToDisplay | async)?.password}}</h2>
-</div>
-<div *ngIf="currentRoute === '/admin'">
-  {{(profileToDisplay | async)?.name}}
-  <hr>
-<app-edit-profile [selectedProfile]="profile"></app-edit-profile>
-</div>
+<h2>Name:{{profileToDisplay?.name}}</h2>
+<h2>Email: {{profileToDisplay?.email}}</h2>
+<h2>Favorite: {{profileToDisplay?.favorites}}</h2>
+<h2>Password: {{profileToDisplay?.password}}</h2>
 </div>

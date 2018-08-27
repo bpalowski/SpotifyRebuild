@@ -1,3 +1,5 @@
+
+
 <h3> Add New Album to Inventory</h3>
 
     <div>
@@ -14,13 +16,19 @@
       </div>
 
       <div>
-        <label>Favorite :</label>
+        <label>Favorites:</label>
         <br>
-        <textarea #newFavorites></textarea>
+        <input #newFavorites>
       </div>
+
       <div>
         <label>Password:</label>
         <br>
-        <textarea #newPassword></textarea>
+        <input #newPassword>
       </div>
+
       <button (click)="submitForm(newName.value, newEmail.value, newFavorites.value, newPassword.value); newName.value=''; newEmail.value=''; newFavorites.value=''; newPassword.value=''">Add</button>
+      <div>
+        <a routerLink="../List">List of Profiles</a>
+      </div>
+      <app-list-profiles></app-list-profiles>

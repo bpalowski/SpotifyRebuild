@@ -3,6 +3,10 @@ import { Profile } from '../models/profile.model';
 import { Router } from '@angular/router';
 import { ProfilService } from '../profil.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { Location } from '@angular/common';
+
+// import { firebaseConfig } from '/app/app.moduel';
+import { EditProfileComponent } from '../edit-profile/edit-profile.component';
 
 @Component({
   selector: 'app-list-profiles',
@@ -12,16 +16,17 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class ListProfilesComponent implements OnInit {
   profiles: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   // profiles: Profile[];
 
-  constructor(private router: Router,private profilService: ProfilService) {}
+  constructor(private router: Router, private profilService: ProfilService) {}
 
   ngOnInit(){
     this.profiles = this.profilService.getProfiles();
   }
 
-  goToProfile(clickedProfile: Profile) {
+  goToProfile(clickedProfile: Profile ) {
     this.router.navigate(['profiles', clickedProfile.$key]);
   };
 }

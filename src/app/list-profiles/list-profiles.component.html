@@ -1,8 +1,13 @@
-
 <h2>List of Profiles</h2>
-
+<div class="Jumbotron">
 <div *ngFor="let profile of profiles | async" (click)="goToProfile(profile)" class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{profile.name}}</em></h3>
+    <h3 (click)="goToProfile(profile)"><em>{{profile.name}}</em></h3>
+    <div *ngIf="currentRoute === '/Admin'">
+        {{profile.email}}
+          <hr>
+         <app-edit-profile [selectedProfile]="profile"></app-edit-profile>
+    </div>
   </div>
+</div>
 </div>

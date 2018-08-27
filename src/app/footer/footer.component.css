@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
    left: 0;
    bottom: 0;
    width: 100%;
@@ -6,4 +6,12 @@
    color: white;
    text-align: center;
    padding: 10px;
+} */
+
+/* #bird2{
+  background-color: black;
+} */
+body{
+  color: white;
+  background-color: black;
 }

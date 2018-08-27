@@ -9,6 +9,7 @@ import { ProfilComponent } from './profil/profil.component';
 import { ResultComponent } from './result/result.component';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 const appRoutes: Routes = [
   {
@@ -46,6 +47,10 @@ const appRoutes: Routes = [
 {
  path: 'Admin',
  component: AdminComponent
+},
+{
+ path: 'Edit',
+ component: EditProfileComponent
 }
  ];
 

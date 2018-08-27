@@ -26,7 +26,7 @@ import { ResultComponent } from './result/result.component';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
-
+import { key } from "firebase-key";
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -65,7 +65,8 @@ export const firebaseConfig = {
       HttpClientModule,
       routing,
       AngularFireModule.initializeApp(firebaseConfig),
-      AngularFireDatabaseModule
+      AngularFireDatabaseModule,
+
   ],
    providers: [],
   bootstrap: [AppComponent]

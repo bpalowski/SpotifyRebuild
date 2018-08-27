@@ -1,3 +1,7 @@
-<p>
-  result works!
-</p>
+<form>
+  <div class="form-group">
+    <label for="query">info</label>
+    <input type=query #queryInfo>
+  </div>
+  <button (click)="getInfo(queryInfo.value)">Get Info</button>
+</form>

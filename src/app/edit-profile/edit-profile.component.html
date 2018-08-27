@@ -4,9 +4,13 @@
 <input [(ngModel)]="selectedProfile.name">
 <br>
 
-<label>New Album Artist:</label>
+<label>New Email:</label>
 <input [(ngModel)]="selectedProfile.email">
 <br>
 
-<label>New Album Description:</label>
+<label>New Favorite:</label>
 <input [(ngModel)]="selectedProfile.favorites">
+
+<button (click)="beginUpdatingProfile(selectedProfile)">Update</button>
+<br>
+<button (click)="beginDeletingProfile(selectedProfile)">Delete</button>

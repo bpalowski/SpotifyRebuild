@@ -1,28 +1,42 @@
 
-<body>
-  <img src="assets/Spotify.jpg" alt="Sm" id="picture">
-<div class="container">
+<!-- <body  class="container-fluid"> -->
+   <!-- <img src="assets/Spotify.jpg" > -->
+   <img src="assets/Spotify.jpg"  id="picture" >
 
+   <body class="container-fluid">
+  <div id="show">
+<div>
+<!-- <img src="assets/Spotify.jpg"  id="picture" > -->
 <div class="row">
 			<div class="col-md-6">
 
 				<div class="form-group col-lg-6">
 					<label>Username</label>
-					<input type="text" name="" class="form-control" id="" value="">
+					<input #newName type="text"  class="form-control" >
 				</div>
 
 				<div class="form-group col-lg-6">
-					<label>Password</label>
-					<input type="text" name="" class="form-control" id="" value="">
+					<label>Email</label>
+					<input  #newEmail type="text" class="form-control" >
 				</div>
 
 				<div class="form-group col-lg-6">
-					<label>Email Address</label>
-					<input type="" name="" class="form-control" id="" value="">
+					<label>Favorite</label>
+					<input #newFavorites type="text" class="form-control" >
 				</div>
 
-        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <div class="form-group col-lg-6">
+          <label>Password</label>
+          <input #newPassword type="text"class="form-control" >
+        </div>
+
+      <button (click)="submitForm(newName.value, newEmail.value, newFavorites.value, newPassword.value); newName.value=''; newEmail.value=''; newFavorites.value=''; newPassword.value=''">Add</button>
 			</div>
+    </div>
+      <div>
+        <a routerLink="../List">List of Profiles</a>
+      </div>
 </div>
 </div>
 </body>
+<!-- </body> -->

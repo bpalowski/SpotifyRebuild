@@ -1,7 +1,14 @@
 #filler{
 /* background-image:url('./../../tripp.jpg'); */
+
 text-align: center;
 background-color: #3d3d5c;
 margin-bottom: 0px;
 padding-bottom: 1px;
 }
+.Jumbtron{
+  color: white;
+}
+/* img{
+  text-shadow: 2px 2px;
+} */
