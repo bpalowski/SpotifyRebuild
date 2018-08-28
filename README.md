@@ -3,7 +3,7 @@ By: Brian Palowski
 
 This website is a mock of the original Spotify music website.
 
-This site will eventually let you set up a account. Search artist/song. API.
+This site lets a user create a profile also edit and delete it.
 
 
 ## Development server
